@@ -3,8 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>peasonal resume</title>
+    <title>ljz-resume</title>
     <link rel="stylesheet" href="./static/css/resume.css">
+    <script type="text/javascript" src="static/codebase/grid.js"></script>
+    <link rel="stylesheet" href="static/codebase/grid.css">
+    <script type="text/javascript" src="static/common/dataset.js?v=6.4.2"></script>
+    <script type="text/javascript" src="static/codebase/grid.js?v=6.4.2"></script>
+    <link rel="stylesheet" href="static/codebase/grid.css?v=6.4.2">
+    <link rel="stylesheet" href="static/common/index.css?v=6.4.2">
+    <link rel="stylesheet" href="static/css/text_hover.css">
+    <link rel="stylesheet" href="static/common/grid.css?v=6.4.2">
+    <script type="text/javascript" src="static/common/large_dataset.js?v=6.4.2"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
+    <script src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="static/image/man.png" />
+
 </head>
 
 <body>
@@ -12,26 +26,26 @@
         <header>
             <div class="img-header">
                 <div class="content">
-                    <p>&lt;title&gt;<strong> ON THE WAY </strong>&lt;/title&gt;</p>
+                    <p><strong> 刘家真 </strong>个人情况</p>
                 </div>
             </div>
         </header>
         <main>
             <div class="information-all">
                 <div class="col-6-asb">
-                    <div class="col-3 peasonal">
-                        <img class="peasonal-image" src="./static/image/peason.png" alt="">
+                    <div class="col-2 peasonal">
+                        <img class="peasonal-image" src="./static/image/me.JPG" alt="">
                     </div>
                     <div class="col-9 item">
                         <p class="title name">
-                            梁博奇 Alex
+                            刘家真 Ansel
                         </p>
                         <div class="col-6">
-                            <p class="phone">135 1111 8888</p>
-                            <p class="education">xxx 大学 | 本科</p>
+                            <p class="phone">158 0548 7199</p>
+                            <p class="education">山东大学 | 本科</p>
                         </div>
-                        <div class="col-6">
-                            <p class="email">XXXXXX@sina.com</p>
+                        <div class="col-6" style="margin-left: -10px">
+                            <p class="email">liujiazhen@mail.sdu.edu.cn</p>
                             <p class="profession">计算机科学与技术</p>
                         </div>
                     </div>
@@ -40,11 +54,11 @@
                     <div class="col-6 ensprience">
                         <div class="item">
                             <p class="title">
-                                关于我
+                                学业情况
                             </p>
                             <ul>
-                                <li>2年后台开发、前端实战经验</li>
-                                <li>发展方向：全栈程序员</li>
+                                <li>学业绩点：93.56</li>
+                                <li>学业排名：2/78 </li>
                             </ul>
                         </div>
                     </div>
@@ -54,91 +68,225 @@
                                 熟练语言
                             </p>
                             <div class="lang">
-                                <lable>LINUX</lable>
                                 <lable>PYTHON</lable>
-                                <lable>JQUERY</lable>
-                                <lable>HTML</lable>
-                                <lable>PHP</lable>
-                                <lable>PHOTOSHOP</lable>
+                                <lable>C/CPP/C#</lable>
+                                <lable>JAVA</lable>
+                                <lable>MATLAB</lable>
+                                <lable>etc.</lable>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <section>
-                <div class="title project">
-                    <p>项目经验</p>
+                <div class="title work">
+                    <p>科研经历</p>
                 </div>
-                <div class="project-detail">
-                    <div class="col-3-abs" id="project-0">
-                        <div class="project-content"> <img src="./static/image/LOGO1.png" alt="">
-                            <p class="project-title">Paxxal后台搭建</p>
-                            <p class="create-time">2014.8 - 2014.9</p>
-                            <p class="decription"> 该作品使用了MVC设计模式，SqlServer数据库，Servlet、jquery ajax的技术上制作的一个动态购物网站，实现了在数据库查询出商品显示在页面上，实现了购物车与购买功能，并对数据库进行相应操作。 </p>
+                <div class="w-experience-detail">
+                    <div class="item w-experience-content">
+                        <div class="logo" style="margin-top: 80pt">
+                            <img class="company-logo"  src="./static/image/s.png" alt="指静脉识别研究">
                         </div>
-                        <div class="link-to">
-                            <a href="https://www.baidu.com" class="button">查看DEMO</a>
-                            <div class="shadow"></div>
+                        <div class="work-content">
+                            <p style="text-align: center;font-size: 16pt;"><strong>指静脉识别研究</strong></p>
+                            <p class="create-time" style="text-align: right">2018.09 - 至今</p>
+                            <p class="job">课题组成员 | 曾任该课题导师机器学习课程助教</p>
+                            <ul>
+                                <li class="key-word">我从大二下学期开始跟随导师进行指静脉识别方面的研究。在这期间，我稳扎基础，广泛阅读了该领域内多篇论文，学习了各种
+                                 先进的算法（包括相近领域的算法)，并且总结了该领域的研究现状以及面临的问题。在导师的指导下，我们提出了一些全新的思考，形成了一套更加完善的指静脉识别理论。
+                                    大量的实验验证了我们的想法，相关的论文和专利如下（点击显示摘要/详细信息）：
+                                    <ul>
+                                        <li style="color: black">
+                                            [1]<a id="a1" href="#" >"Sensor-Interoperable Finger Vein Recognition Using a Shallow Convolutional Neural Network"</a><br>
+                                            第二作者，已投IEEE Transactions on Information Forensics and Security(TIFS)，在审。该期刊影响因子6.211，位于Computer Science学科的Q1。
+                                        </li>
+                                        <li style="color: black">
+                                            [2]<a id="a2" href="#" >"Challenging task-oriented finger vein recognition using a triplet convolutional neural network"</a><br>
+                                            第二作者，拟投IEEE Access，完稿修改中。
+                                        </li>
+                                        <li style="color: black">
+                                            [3]<a id="a3"  >"基于浅层卷积神经网络的指静脉识别方法"</a>
+                                            ，[1]的对应专利，在审
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="key-word">
+                                    我的主要工作包括指静脉识别领域的<a href="#" id="a4">研究调查</a>，<a href="#" id="a5">算法的设计和开发</a>以及<a href="#" id="a6">论文的排版</a>。
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-3-abs" id="project-1">
-                        <div class="project-content"> <img src="./static/image/LOGO2.png" alt="">
-                            <p class="project-title">聊天应用开发</p>
-                            <p class="create-time">2014.8 - 2014.9</p>
-                            <p class="decription"> 该作品使用了MVC设计模式，SqlServer数据库，Servlet、jquery ajax的技术上制作的一个动态购物网站，实现了在数据库查询出商品显示在页面上，实现了购物车与购买功能，并对数据库进行相应操作。 </p>
+                    <div class="item w-experience-content">
+                        <div class="logo" style="margin-top: 80pt">
+                            <img class="company-logo"  src="./static/image/p.jpeg" alt="天文识别研究">
                         </div>
-                        <div class="link-to">
-                            <a href="https://www.baidu.com" class="button">查看DEMO</a>
-                            <div class="shadow"></div>
+                        <div class="work-content">
+                            <p style="text-align: center;font-size: 16pt;"><strong>天文光谱分类/星象提取研究</strong></p>
+                            <p class="create-time" style="text-align: right">2019.05 - 至今</p>
+                            <p class="job">课题组成员 | 该课题导师科研助理</p>
+                            <ul>
+                                <li class="key-word">在接触了一定的ML/DL知识后，我具备了一定的编程能力，正好我的一位任课老师需要对设计的算法模型编程检验，在大三上学期，我成为了该导师的科研助理并开始了算法验证工作。之后由于出色的表现，我
+                                    又加入了与我校物理学院开展的合作研究中，负责将已有的python算法迁移到Linux的C语言平台下。在这个课题研究中，主要的论文情况如下（点击显示摘要/详细信息）：
+                                    <ul>
+                                        <li style="color: black">
+                                            [1]<a id="a7" href="#" >"一种层次化的太阳黑子快速识别方法"</a>
+                                            第二作者，光电工程，中文核心期刊，影响因子1.015，已录用，7月见刊。
+                                        </li>
+                                        <li style="color: black">
+                                            [2]<a id="a8" href="#" >"Automated Classification of massive spectra based on Enhanced Multi-scale Coded Convolutional Neural Network"</a>
+                                            第三作者，Universe，期刊位于ASTRONOMY学科的Q2，影响因子2.165，第三作者，已录用(Accepted)。
+                                        </li>
+                                        <li style="color: black">
+                                            [3]<a id="a9"  >"Spectral Feature Extraction by Partial and General Methods"</a>
+                                            ，第二作者，目前已完成了论文的初稿，还在进一步修改。
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="key-word">
+                                    我的主要工作包括<a href="#" id="a10">算法模型的检验</a>，<a href="#" id="a11">代码的重新开发</a>以及<a href="#" id="a12">论文的排版</a>。
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-3-abs endline" id="project-2">
-                        <div class="project-content"> <img src="./static/image/LOGO3.png" alt="">
-                            <p class="project-title">购物商城前端搭建</p>
-                            <p class="create-time">2014.8 - 2014.9</p>
-                            <p class="decription"> 该作品使用了MVC设计模式，SqlServer数据库，Servlet、jquery ajax的技术上制作的一个动态购物网站，实现了在数据库查询出商品显示在页面上，实现了购物车与购买功能，并对数据库进行相应操作。 </p>
+                    <div class="item w-experience-content">
+                        <div class="logo" style="margin-top: 80pt">
+                            <img class="company-logo"  src="./static/image/g.jpeg" alt="国家级大学生创新创业训练计划">
                         </div>
-                        <div class="link-to">
-                            <a href="https://www.baidu.com" class="button">查看DEMO</a>
-                            <div class="shadow"></div>
+                        <div class="work-content">
+                            <p style="text-align: center;font-size: 16pt;"><strong>国家级大学生创新创业训练计划</strong></p>
+                            <p class="create-time" style="text-align: right">2019.09 - 至今</p>
+                            <p class="job">项目队长</p>
+                            <ul>
+                                <li class="key-word">在广泛阅读论文的过程中，接触到了更多的有关CV的知识，对对抗神经网络（GAN）产生了研究的兴趣，因此在大三学期申请了国家级创新创业训练计划：
+                                </li>
+                                <li class="key-word">
+                                    立项的主题是基于GAN进行图像生成和增强研究，前期的研究以兴趣驱动为主，尝试手动（借助框架）实现了原始的GAN模型、CyclyGAN、DCGAN等比较有意思的模型，期间接触到了
+                                    超分辨率、风格迁移、上采样等概念，有了一些概念，又进一步拓展到图像分割领域（这时已经不仅仅是研究GAN了）。之后的研究就开始思考怎么利用GAN来增加其他课题研究的
+                                    创新性，又接触到了利用GAN进行数据扩增（目前仍存在争议）、知识蒸馏等概念。
+                                </li>
+                                <li class="key-word">
+                                    团队成员只有两人，但是都具有很强的研究兴趣。互相配合，搜集论文阅读并且合作开发代码，尝试了很多创新的想法，用在其他课题研究中。这些创新性的想法还有待进一步的思考检验，
+                                    但是在这个过程中我培养了一定的编程能力以及独立思考的能力。
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="title work">
-                    <p>工作经历</p>
+                <div class="title project">
+                    <p>成绩｜荣誉</p>
                 </div>
-                <div class="w-experience-detail">
-                    <div class="item w-experience-content">
-                        <div class="logo">
-                            <img class="company-logo" src="./static/image/LOGO4.png" alt="">
-                        </div>
-                        <div class="work-content">
-                            <p class="create-time">2014.10 - 2016.10</p>
-                            <p class="job">产品经理 | 多桔子信息科技有限公司</p>
-                            <ul>
-                                <li>团队管理，电商产品管理，电子商务策划项目管理；</li>
-                                <li>网站需求分析，产品设计，产品跟踪，及后续产品优化工作；</li>
-                                <li>与研发、营销、客服配合，展开产品开发、销售、售后工作；</li>
-                                <li>产品应用市场调研和分析；</li>
-                                <li>公司品牌宣传，产品推广，负责公司网站策划和运营工作。</li>
-                            </ul>
+                <div class="project-detail">
+                    <div class="col-6-asb endline" id="grade">
+                        <div class="project-content"> <img src="./static/image/price.png" alt="">
+                            <p class="project-title">曾获荣誉</p>
+                            <div style="margin-bottom: 25px;margin-top: 40px">
+                            <h4 class="text-hover text-hover-halfline-bottom-goes-left">
+                                2018及2019年国家奖学金
+                            </h4>
+                            </div>
+                            <div style="margin-bottom: 25px">
+                            <h4 class="text-hover text-hover-halfline-bottom-goes-left" >
+                                2019年全国大学生数学建模竞赛本科组二等奖
+                            </h4>
+                            </div>
+                            <div style="margin-bottom: 25px">
+                            <h4 class="text-hover text-hover-halfline-bottom-goes-left" >
+                                2019年山东省软件设计大赛一等奖
+                            </h4>
+                            </div>
+                            <div style="margin-bottom: 25px">
+                            <h4 class="text-hover text-hover-halfline-bottom-goes-left">
+                                2019年山东省山大杯微电子嵌入式大赛三等奖
+                            </h4>
+                            </div>
+                            <div style="margin-bottom: 25px">
+                            <h4 class="text-hover text-hover-halfline-bottom-goes-left">
+                                2019年山东省大学生三下乡志愿活动优秀学生
+                            </h4>
+                            </div>
+                            <div style="margin-bottom: 25px">
+                            <h4 class="text-hover text-hover-halfline-bottom-goes-left">
+                                2019年山东大学学生创新创业活动先进个人
+                            </h4>
+                            </div>
+                            <div style="margin-bottom: 25px">
+                            <h4 class="text-hover text-hover-halfline-bottom-goes-left">
+                                2018年山东大学三好学生
+                            </h4>
+                            </div>
+                            <div style="margin-bottom: 25px">
+                            <h4 class="text-hover text-hover-halfline-bottom-goes-left">
+                                2019年山东大学优秀团员
+                            </h4>
+                            </div>
+                            <div style="margin-bottom: 25px">
+                            <h4 class="text-hover text-hover-halfline-bottom-goes-left">
+                                2018及2019年山东大学学业一等奖学金
+                            </h4>
+                            </div>
+                            <div style="margin-bottom: 25px">
+                            <h4 class="text-hover text-hover-halfline-bottom-goes-left">
+                                2018年山东大学社会服务一等奖学金
+                            </h4>
+                            </div>
                         </div>
                     </div>
-                    <div class="item w-experience-content">
-                        <div class="logo">
-                            <img class="company-logo" src="./static/image/LOGO5.png" alt="">
+                    <div class="col-6-asb  endline" id="hr">
+                        <div class="project-content"> <img src="./static/image/grade.png" alt="">
+                            <p class="project-title">主要课程情况</p>
+
+                            <section class="dhx_sample-container"style="height:470px;">
+                                <div class="dhx_sample-container__widget" id="grid" style="height:470px;max-width: 620px;"></div>
+                            </section>
+                            <script>
+                                var grid = new dhx.Grid("grid", {
+                                    columns: [
+
+                                        { width:135, id: "b", header: [{ text: "类别" },{ content: "selectFilter" }] },
+                                        {  width:190,id: "c", header: [{ text: "名称" }] },
+                                        { width:80, id: "d", header: [{ text: "成绩" }]},
+                                    ],
+                                    data: dataset,
+                                });
+                            </script>
                         </div>
-                        <div class="work-content">
-                            <p class="create-time">2014.10 - 2016.10</p>
-                            <p class="job">软件开发工程师 | SINGU</p>
-                            <ul>
-                                <li>负责公司内部业务系统的设计及改进，参与公司网上商城系统产品功能设计及实施工作；</li>
-                                <li>负责客户调研、客户需求分析、方案写作等工作；</li>
-                            </ul>
-                            <p class="key-word">参与公司多个大型电子商务项目的策划工作，担任大商集团网上商城一期建设项目经理。</p>
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <div class="title enducation">
+                    <p>其他</p>
+                </div>
+                <div class="project-detail">
+
+                    <div class="col-3" id="project-1">
+                        <div class="project-content"> <img src="./static/image/work.png" alt="">
+                            <p class="project-title">工作经历</p>
+                            <p class="create-time">2018.9 - 至今</p>
+                            <p class="decription"> 大二时，机缘巧合之下我获得了担任班级班长的机会，尽管我听说当大学班长是一件很累的工作，但是我还是选择了成为班长，因为我希望在工作中得到锻炼，提高与人沟通的能力，让自己的发展更加全面。所以在担任班长期间，我保持谦虚的态度，注重培养与人沟通和团结协作的能力，多与同学交流，及时听取反映同学们的意见，掌握了一定的组织协调能力，磨炼了自己的心性。大三上学期获得了机电与信息工程学院优秀学生干部称号。 </p>
                         </div>
+
+                    </div>
+                    <div class="col-3" id="project-0">
+                        <div class="project-content"> <img src="./static/image/ai.png" alt="">
+                            <p class="project-title">曾接触过的AI知识</p>
+                            <p class="create-time">2017.9 - 至今</p>
+                            <p class="decription"> 我始终对先进事物保持积极探索的态度，对科学研究很有耐心，大学空闲生活几乎都是在实验室中度过。在实验室学习期间，我尝试做过图像闭集识别、开集识别，目标检测，图像语义分割，图像生成等任务，
+                                也由于数学建模的需要学习过NLP的一些知识，比如LSTM模型以及BERT预训练模型。不过我并不是系统全面地对这些知识进行学习，而是以兴趣为驱动，注重实现（借助框架），在实现的基础上通过代码和论文（包括一些博客的资料）再去理解
+                                这些优秀算法的思路。所以我具备一定的AI方向的基础，但还是有很多需要细细学习的知识。因此，未来我希望能在某一领域深入挖掘，更深入地学习这些知识。 </p>
+                        </div>
+                    </div>
+                    <div class="col-3 endline" id="project-2">
+                        <div class="project-content"> <img src="./static/image/coun.png" alt="">
+                            <p class="project-title">社会实践经历</p>
+                            <p class="create-time">2018.6 - 2018.9</p>
+                            <p class="decription"> 除了关注学习科研，我还曾经投身社会实践，作为队长组织了一支实践队伍去我的家乡针对当地农产品展开调研。当时我们队伍全部由大一新生组成，做事比较稚嫩，很多安排也不合理，但是大家团结互助，没有怨言，积极认真地完成每一项任务，这种态度让我们队伍在激烈的竞争中脱颖而出，获得了校级优秀团队的称号，我也获得了山东省大学生"三下乡"优秀个人称号。 </p>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -149,39 +297,66 @@
                     <p>联系我</p>
                 </div>
                 <div class="peasonal-message">
-                    <img class="peasonal-image" src="./static/image/peason.png" alt="">
+                    <img class="peasonal-image" src="./static/image/man.png" alt="">
                     <div class="item">
-                        <p class="name">梁博奇 Alex</p>
-                        <p class="phone">135 1111 8888</p>
-                        <p class="email">XXXXXX@sina.com</p>
+                        <p class="name">刘家真 Ansel</p>
+                        <p class="phone">158 0548 7199</p>
+                        <p class="email">liujiazhen@mail.sdu.edu.cn</p>
                     </div>
                     <div class="item contact">
-                        <div class="col-3 qrcode">
-                            <img class="qr-image" src="./static/image/QRCode.png" alt="">
+                        <div class="col-6 qrcode">
+                            <img class="qr-image" src="./static/image/we.JPG" alt="">
+                            <h4>WeChat</h4>
                         </div>
-                        <div class="col-9">
-                            <p>了解更多的我</p>
-                            <div class="icon-container">
-                                <a href="#" class="icon">
-                                    <img src="./static/image/giteeICON.png" alt="">
-                                </a>
-                                <a href="#" class="icon">
-                                    <img src="./static/image/zhihuICON.png" alt="">
-                                </a>
-                                <a href="#" class="icon">
-                                    <img src="./static/image/weiboICON.png" alt="">
-                                </a>
-                                <a href="#" class="icon">
-                                    <img src="./static/image/oscICON.png" alt="">
-                                </a>
-                            </div>
+                        <div class="col-6 ">
+                            <img class="qr-image" src="./static/image/qq.JPG" alt="">
+                            <h4>QQ</h4>
                         </div>
                     </div>
                 </div>
             </section>
-            <p class="footer">© Gitee.com</p>
+            <p class="footer">© ljz</p>
         </footer>
     </div>
 </body>
+<script>$('#a1').webuiPopover({title:'Abstract',width:650,content:'Deep learning-based finger vein recognition (FVR) can be divided into closed-set architecture (CS-Architecture) and open-set architecture (OS-Architecture) based on the system output. The CS-Architecture has limited practicality due to its closure, and the OS-Architecture has limited generalization ability due to the difficult convergence. To improve the practicality and performance of deep learning-based FVR, we propose the hypothesis that a shallow convolutional neural network is suitable for FVR. Based on this hypothesis, we design a shallow network with three convolutional blocks and two fully connected layers that can be efficiently applied for both CS-Architecture and OS-Architecture. Moreover, an improved interval-based loss function is used to extract discriminative large-margin features. The proposed network has excellent real-time performance, which gives rise to retrain easily. It not only improves the practicality of CS-Architecture but also alleviates the overfitting of OS-Architecture. The superior performance of both CS-Architecture and OS-Architecture is verified by extensive experiments on five publicly available databases. Besides, experiments conducted over the joint training set demonstrate the sensor-interoperable, as well as the potential for practical application. ',placement:'top'});</script>
+<script>$('#a2').webuiPopover({title:'Abstract',width:650,content:'Early deep learning-based research of finger vein recognition used closed-set protocol in which all testing identities are predefined in training set, which had low practicability. Now more research under challenging open-set protocol in which all testing identities are not predefined in training set is emerging, but its performance still needs to be improved. To address these issues, we propose to use a triplet network with margin sample mining loss that can improve the performance of network under challenging tasks across time periods and databases by vein pattern extraction algorithm. Compared with the traditional and deep learning-based methods, we also effectively shortened the template length generated by the network, which can reduce the storage cost and computational complexity of finger vein recognition systems. In addition, we found that the current finger vein recognition research uses different training and testing protocols, so it is hard to make a fair comparison among them. Therefore, we have systematically classified the finger vein recognition experimental methods. The results on two public databases show outstanding performance using the proposed method in finger vein recognition under the challenging settings of cross-session closed-set and open-set protocols.',placement:'top'});</script>
+
+<script>$('#a4').webuiPopover({title:'Survey',width:650,content:'近年来deep learning based分割/识别算法越来越受到指静脉研究人员的关注，我们研究的重心也开始向DL偏移。经过大量的Survey工作，我们明确了基于DL方法的算法分类，同时发现了一些问题，比如由于DIP方法不涉及训练问题，是无监督的算法，而DL算法通常要通过监督训练实现，那么在DL的实现方式上，就产生了Open/Close识别的区别。大部分研究并未明确这种区别，所以很多研究中得到的实验性能相对不可靠；还有常用的数据库也存在一些问题，有的数据库同类数据类内距离过大，甚至可能会大过不同类的类间距离。数据问题严重影响了监督训练，也让我们产生思考，为了安全问题，我们是否应该将这种虽然同类但是相差很大的样本拒识。',placement:'top'});</script>
+<script>$('#a5').webuiPopover({title:'Algorithm',width:650,content:'算法的设计过程中，我参考了人脸识别领域的一些基于损失函数改进的算法，包括三元组损失，A-softmax，AMSoftMax，CosSoftmax等，然后在迁移一些经典方法到指静脉领域的过程中，我们发现深层/复杂的卷积网络非常容易产生过拟合，即使是使用ResNet那样的残差学习，最终也只是学习到上一层的恒等变换（即无法继续学习更多特征）。基于指静脉本身的特征，我们设计了更合适的网络结构以及改进了训练的损失函数，在多个公开数据集上取得了理想的结果',placement:'top'});</script>
+<script>$('#a6').webuiPopover({width:650,content:'在这个过程中我学到了一些论文的基本知识，同时也研究了Latex的使用方法，初步具备了独立写作论文的能力。',placement:'top'});</script>
+<script>$('#a7').webuiPopover({title:'Abstract',width:650,content:'Observation and recognition of sunspots is important tasks of solar physics. By observing and analyzing \n' +
+        'sunspots, solar physicists are able to analyze and predict solar activities with higher accuracy. With the continuous \n' +
+        'progress of observation instruments, solar full-disk image data amount is also on a rapid growth. In order to recognize \n' +
+        'and label sunspots quickly and accurately, a two-layer sunspot recognition model is proposed in this paper. The first layer \n' +
+        'model is based on deep learning model YOLO. In order to enhance the ability of YOLO to recognize small sunspots, the \n' +
+        'parameters of YOLO are optimized by using k-means algorithm based on intersection-over-union. The final YOLO model \n' +
+        'can identify most large sunspots and sunspot groups, with only a few isolated small sunspots being unidentified. For the \n' +
+        'purpose of further improving recognition rate of small sunspots, the second layer model applies AGAST feature detection \n' +
+        'algorithm to specifically identify the missing small sunspots. The experimental results on SDO/HMI sunspot data set \n' +
+        'show that all kinds of sunspots can be recognized effectively with high recognition accuracy by using the model proposed \n' +
+        'in this paper, thus realizing the real-time sunspot detection task.',placement:'top'});</script>
+<script>$('#a8').webuiPopover({title:'Abstract',width:650,content:'The Large Sky Area Multi-Object Fiber Spectroscopic Telescope (LAMOST) has produced\n' +
+        ' massive medium resolution spectra. Data mining for special and rare stars in massive LAMOST\n' +
+        ' spectra is of great significance. Feature extraction plays an important role in the process of automatic\n' +
+        ' spectra classification. The proper classification network has the ability to extract most of the\n' +
+        ' common spectral features with minimum noise and individual features. Such a network has\n' +
+        ' better generalization capabilities and can extract sufficient features for classification. A variety of\n' +
+        ' classification networks of one dimensional and two dimensional are both designed and implemented\n' +
+        ' systematically in this paper to verify whether spectra is easier to deal with in a 2D situation. The\n' +
+        ' experimental results show that the fully connected neural network cannot extract enough features.\n' +
+        ' Although convolutional neural network (CNN) with a strong feature extraction capability can quickly\n' +
+        ' achieve satisfactory results on the training set, there is a tendency for overfitting. Signal-to-noise\n' +
+        ' ratios also have effects on the network. To investigate the problems above, various techniques are\n' +
+        ' tested and the enhanced multi-scale coded convolutional neural network (EMCCNN) is proposed\n' +
+        ' and implemented, which can perform spectra denoising and feature extraction at different scales in\n' +
+        ' a more efficient manner. In a specified search, eight known and one possible cataclysmic variables\n' +
+        ' (CVs) in LAMOST MRS are identified by EMCCNN including four CVs, one dwarf nova and three\n' +
+        ' novae. The result supplements the spectra of CVs. Furthermore, these spectra are the first medium\n' +
+        ' resolution spectra of CVs. The EMCCNN model can be easily extended to search for other rare stellar\n' +
+        ' spectra.',placement:'top'});</script>
+<script>$('#a10').webuiPopover({width:650,content:'光谱是关于通过率/波长的数据，但是在某种程度上可以抽象为一维序列，类似语言模型，可以借鉴使用一些处理一维数据的方法。有很多框架支持实现对一维序列的降维、卷积、全连接等操作，也方便了模型检验工作',placement:'top'});</script>
+<script>$('#a11').webuiPopover({width:650,content:'python有很多库可以用于天文领域，因此初步的算法实现都是通过python完成的。但是后续要求更高的算法性能，而python由于其自身的特点代码执行效率远低于C/CPP语言，所以有了在C语言平台上重新开发的需求。在重新开发的过程中，我学到了一些跨平台的基本概念，对linux环境下的链接编译也有了一定的了解，更重要的是我开始尝试对python源码使用C语言重新开发（结合OpenCV和其他开源库），进一步提高了编程能力。',placement:'top'});</script>
+<script>$('#a12').webuiPopover({width:650,content:'继续使用Latex对论文进行排版，虽然不同对出版社要求的Latex模板有区别，但我能较快地阅读官方文档并且学会使用新的模板。',placement:'top'});</script>
 
 </html>
